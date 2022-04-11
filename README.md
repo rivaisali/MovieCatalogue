@@ -10,8 +10,8 @@ selamat mencoba :). #juaraandroid
 DEMO
 
 <p align="center">
-  <img src="https://ibb.co/HdTStrW" width="350" title="Splashscreen">
-  <img src="https://ibb.co/T1qjNK7" width="350" alt="Movies">
-  <img src="https://ibb.co/gTMDS4g" width="350" alt="TV Show">
-  <img src="https://ibb.co/NYvdX7S" width="350" alt="Detail">
+  <img src="https://i.ibb.co/2N39vjD/Whats-App-Image-2022-04-11-at-11-14-05-PM-2.jpg" width="350" title="Splashscreen">
+  <img src="https://i.ibb.co/f9G6T8y/Whats-App-Image-2022-04-11-at-11-14-05-PM.jpg" width="350" alt="Movies">
+  <img src="https://i.ibb.co/VSWvgwB/Whats-App-Image-2022-04-11-at-11-14-06-PM-2.jpg" width="350" alt="TV Show">
+  <img src="https://i.ibb.co/2K91w5N/Whats-App-Image-2022-04-11-at-11-14-06-PM.jpg" width="350" alt="Detail">
 </p>
