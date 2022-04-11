@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Accent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapseTollbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/Primary"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarLayoutCollapsedTextStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/bold"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="@string/title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imgPoster"
+                    app:layout_constraintTop_toTopOf="@+id/imgPoster" />
+
+                <ImageView
+                    android:id="@+id/imgBackdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/backdrop_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_collapseMode="parallax"
+                    android:contentDescription="@string/backdrop" />
+
+
+                <ImageView
+                    android:id="@+id/imgPoster"
+                    android:layout_width="90dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="40dp"
+                    android:contentDescription="@string/image_poster"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBackdrop"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="@string/year"
+                    android:fontFamily="@font/bold"
+                    app:layout_constraintStart_toEndOf="@+id/imgPoster"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/text_rounded"
+                    android:fontFamily="@font/bold"
+                    android:padding="@dimen/padding"
+                    android:text="@string/category"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tvRating"
+                    app:layout_constraintTop_toTopOf="@+id/imgBackdrop" />
+
+                <TextView
+                    android:id="@+id/tvGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/semibold"
+                    android:textSize="12sp"
+                    android:text="@string/genre"
+                    android:textColor="@color/grey"
+                    app:layout_constraintStart_toEndOf="@+id/imgPoster"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:text="@string/duration"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/grey"
+                    app:layout_constraintStart_toEndOf="@+id/tvYear"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_rounded"
+                    android:contentDescription="@string/btnShare"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/ic_share"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvGenre" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/text_rounded"
+                    android:fontFamily="@font/bold"
+                    android:padding="@dimen/padding"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:drawableStart="@drawable/ic_star"
+                    android:text="@string/rating"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imgBackdrop" />
+
+                <TextView
+                    android:id="@+id/tvLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/language"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    app:layout_constraintStart_toEndOf="@+id/tvDuration"
+                    app:layout_constraintTop_toTopOf="@+id/tvDuration" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/Theme.MovieCatalogue.ToolBarStyle" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvDescriptiontitle"
+                android:layout_width="match_parent"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bold"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:justificationMode="inter_word"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:fontFamily="@font/semibold"
+                android:layout_height="wrap_content"
+                tools:targetApi="o" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

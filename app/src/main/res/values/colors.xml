@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#1f2837</color>
+    <color name="DarkPrimary">#1f2837</color>
+    <color name="Accent">#1a222d</color>
+    <color name="grey">#52707a</color>
+    <color name="tablayout">#ae3b19</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="line">#1f2933</color>
+    <color name="placeholder">#6FB6B6B6</color>
+</resources>

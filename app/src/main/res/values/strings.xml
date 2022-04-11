@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GoMovies</string>
+    <string name="movies">Movies</string>
+    <string name="tvshow">Tv Shows</string>
+    <string name="title">Movie Title</string>
+    <string name="genre">Genre</string>
+    <string name="year">Year</string>
+    <string name="image_poster">image_poster</string>
+    <string name="rating">rating</string>
+    <string name="backdrop">backdrop image</string>
+    <string name="description">Description</string>
+    <string name="btnBookmark">Button Bookmark</string>
+    <string name="btnShare">Button Share</string>
+    <string name="category">Category</string>
+    <string name="duration">\u25CF %s</string>
+    <string name="language">\u25CF %s</string>
+    <string name="gomovies_logo">Go Movies Logo</string>
+</resources>
